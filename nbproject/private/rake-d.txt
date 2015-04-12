@@ -60,6 +60,7 @@ doc\:rails=
 doc\:reapp=
 doc\:rerails=
 environment=
+haml\:erb2haml=Convert html.erb to html.haml each file in app/views
 html=
 html/created.rid=
 log\:clear=Truncates all *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)
