@@ -4,14 +4,17 @@ class SessionsController < ApplicationController
   end
   
   def create
-    @request = Api.new(params[:sessions][:username], params[:sessions][:password])
-    @request.post("authentication")
-    if(!@request)
-      flash.now[:alert] = "Lets try again"
-      render action: "new"
-    else
-      log_in
-      redirect_to root_path
-    end
+    log_in
+    @data = session[:dump]
+    @data2 = JSON.parse(@data)
+    #redirect_to root_path
+  end
+  
+  def destroy
+    
+  end
+  
+  def dashboard
+    
   end
 end

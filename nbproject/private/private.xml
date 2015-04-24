@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/projects/ruby/mifos/app/controllers/auth_controller.rb</file>
-            <file>file:/var/www/html/projects/ruby/mifos/app/views/auth/show.html.haml</file>
-            <file>file:/var/www/html/projects/ruby/mifos/app/views/auth/new.html.haml</file>
+            <file>file:/var/www/html/projects/ruby/mifos/app/helpers/api_helper.rb</file>
+            <file>file:/var/www/html/projects/ruby/mifos/app/controllers/sessions_controller.rb</file>
         </group>
     </open-files>
 </project-private>
