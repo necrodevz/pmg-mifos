@@ -1,0 +1,30 @@
+-offices = []
+-@offices.each do |x|
+	-offices.push([x[:name], x[:id]])
+
+-roles = []
+-@roles.each do |x|
+	-roles.push([x[:name], x[:id]])
+
+=form_for(:user, url: "add") do |f|
+	=f.label :username
+	=f.text_field :username, class: "form-control"
+
+	=f.label :firstname
+	=f.text_field :firstname, class: "form-control"
+
+	=f.label :lastname
+	=f.text_field :lastname, class: "form-control"
+
+	=f.label :email
+	=f.email_field :email, class: "form-control"
+
+	=f.label :officeId
+	=f.select :officeId, options_for_select(offices)
+
+	=f.label :role
+	=f.select :role, options_for_select(roles)
+
+	=f.submit "Save User"
+
+=console

@@ -1,9 +1,23 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
-  
-  get 'login' => 'sessions#new'
+  get 'users' => 'users#index'
+  get 'users/new'
+  get 'users/edit'
+  get 'users/update'
+  get 'users/delete'
 
+  root 'static_pages#home'
+
+  get 'about' => 'static_pages#about'
+  get 'contact' => 'static_pages#contact'
+  get 'login' => 'sessions#new'
+  get 'dashboard' => 'sessions#dashboard'
+
+  get 'clients/index'
+  
   post 'sessions/create'
+  post 'users/add'
+
+  delete 'logout' => 'sessions#destroy'
   
   
   # The priority is based upon order of creation: first created -> highest priority.

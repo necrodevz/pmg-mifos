@@ -1,0 +1,31 @@
+%h1 Users#edit
+%p Find me in app/views/users/edit.html.haml
+
+=form_for(:nuser, url: "update", class: "form-horizontal") do |f|
+	.form-group
+		=f.label :username
+		=f.text_field :username, {class: "form-control", placeholder: @user[:username]}
+
+	.form-group
+		=f.label :firstname
+		=f.text_field :firstname, {class: "form-control", placeholder: @user[:firstname]}
+
+	.form-group
+		=f.label :lastname
+		=f.text_field :lastname, {class: "form-control", placeholder: @user[:lastname]}
+
+	.form-group
+		=f.label :email
+		=f.email_field :email, {class: "form-control", placeholder: @user[:email]}
+
+	.form-group
+		=f.label :email
+		=f.email_field :email, {class: "form-control", placeholder: @user[:email]}
+
+	.form-group
+		=f.label :email
+		=f.email_field :email, {class: "form-control", placeholder: @user[:email]}
+
+	=f.submit "Save User"
+
+=console

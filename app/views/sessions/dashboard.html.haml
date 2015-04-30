@@ -1,0 +1,9 @@
+%div{:style => "height:100px;"}
+.jumbotron
+  %ul{:class => "nav nav-tabs pull-right", :id => "admin"}
+    %li{:class => "active"}
+      =link_to raw("<span class='glyphicon glyphicon-user'></span>Clients"), '#', {"data-toggle" => "tab", :id => "clients"}
+    %li{:class => "nav-tabs"}
+      =link_to raw("<span class='glyphicon glyphicon-usd'></span>Loans"), '#', {"data-toggle" => "tab", :id => "loans"}
+    %li{:class => "nav-tabs"}
+      =link_to "Users", '#', {"data-toggle" => "tab", :id => "users"}
